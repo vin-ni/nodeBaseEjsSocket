@@ -1,0 +1,1 @@
+"use strict";const socket=io.connect();socket.on("connect",function(o){socket.emit("join","Server Connected to Client")}),socket.on("messages",function(o){console.log(o)}),window.onbeforeunload=function(){};
